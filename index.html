@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <style>
+        .main {
+            width: 50%;
+            height: 50%;
+            border-radius: 5px;
+            margin-left: 25%;
+            margin-top: 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 12px;
+        }
+
+        input {
+            width: 50%;
+            border-radius: 3px;
+            height: 20px;
+        }
+
+        button {
+            padding: 5px;
+            text-transform: uppercase;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.842);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>
+            Lets Play Game..!
+        </h2>
+        <p>We will select a random no between 1-25. You have to guess that no in 5 attempts. </p>
+
+        <label for="number">
+            <h3>Enter the no</h3>
+        </label>
+        <input type="text" name="number" id="number">
+        <br> <br>
+        <button id="checkButton" onclick="checkFunc()">Check</button>
+        <br>
+        <br>
+        <p id="turn">Turn No : </p>
+        <p id="prev">Prev Attempts : </s></p>
+        <p id="answer"></p>
+        <h3 id="gameStatus"></h3>
+        <button id="reset" style="display: none;">Reset Game</button>
+
+
+    </div>
+
+
+
+    <script src="./noGame.js"></script>
+</body>
+
+</html>
